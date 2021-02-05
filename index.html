@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            max-width: 90%;
+            height: 5000px;
+            background-color: green;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .black{
+            margin: 10px;
+            width: 30%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        
+    </div>
+    <script>
+        function getRandomArbitrary(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        var container = [...document.querySelector('.container').children];
+        console.log(container)
+        container.forEach(element => {
+            element.style.height = getRandomArbitrary(240, 700) + 'px';
+        });
+    </script>
+</body>
+</html>
