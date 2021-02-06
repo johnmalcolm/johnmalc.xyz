@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+ul,li{
+  padding-left: 0px;
+  text-align: left;
+  list-style: none;
+}
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: black;
+}
+body, html{
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.sidebar{
+  float: left;
+  width: 200px;
+  padding: 30px;
+  margin-right: 50px;
+}
+h1{
+  font-size: 15px;
+  float: left;
+  padding-bottom: 20px;
+}
+.container{
+  float: left;
+  margin-top: 50px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+.col{
+  flex-grow: 4; 
+}
+.col img{
+  display: block;
+  margin: 20px auto;
+  background-color: black;
+}
