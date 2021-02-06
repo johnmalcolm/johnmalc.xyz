@@ -5,63 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body, html{
+            margin: 0px;
+            padding: 0px;
+        }
         .container{
-            max-width: 90%;
-            height: 5000px;
             background-color: green;
             display: flex;
-            flex-flow: column wrap;
+            flex-direction: row;
+        }
+        .col{
+            background-color: red;
+            flex-grow: 4; 
         }
         .black{
             margin: 10px;
-            width: 30%;
-            background-color: white;
+            height: 300px;
+            background-color: black;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
-        
+        <div class="col col-1">
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+        </div>
+        <div class="col col-2">
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+        </div>
+        <div class="col col-3">
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+        </div>
     </div>
     <script>
         function getRandomArbitrary(min, max) {
             return Math.random() * (max - min) + min;
         }
 
-        var container = [...document.querySelector('.container').children];
-        console.log(container)
-        container.forEach(element => {
-            element.style.height = getRandomArbitrary(240, 700) + 'px';
-        });
+        // var container = [...document.querySelector('.container').children];
+        // console.log(container)
+        // container.forEach(element => {
+        //     element.style.height = getRandomArbitrary(240, 700) + 'px';
+        // });
     </script>
 </body>
 </html>
