@@ -1,6 +1,7 @@
 import React from 'react';
 import { LazyLoadImage, trackWindowScroll } from 'react-lazy-load-image-component';
- 
+import Placeholder from './Placeholder' 
+
 const Gallery = ({ images, scrollPosition }) => {
 
     const createGalleryColumn = (colNumber) => {
@@ -12,6 +13,7 @@ const Gallery = ({ images, scrollPosition }) => {
             key={image.key}
             alt={image.alt}
             height={image.height}
+            // placeholder={<Placeholder/>}
             // Make sure to pass down the scrollPosition,
             // this will be used by the component to know
             // whether it must track the scroll position or not

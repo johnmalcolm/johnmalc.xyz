@@ -1,10 +1,8 @@
 .App {
   text-align: center;
 }
-ul,li{
+ul{
   padding-left: 0px;
-  text-align: left;
-  list-style: none;
 }
 a:link, a:visited, a:hover, a:active{
   text-decoration: none;
@@ -15,11 +13,17 @@ body, html{
   margin: 0px;
   padding: 0px;
 }
+
 .sidebar{
-  float: left;
   width: 200px;
   padding: 30px;
-  margin-right: 50px;
+  position: fixed;
+}
+li{
+  list-style: none;
+  text-align: left;
+  list-style: none;
+  line-height: 1.4em;
 }
 h1{
   font-size: 15px;
@@ -27,17 +31,30 @@ h1{
   padding-bottom: 20px;
 }
 .container{
-  float: left;
   margin-top: 50px;
-  width: 70%;
+  width: 800px;
   display: flex;
   flex-direction: row;
+  margin-left: 270px;
+  float: left;
 }
 .col{
-  flex-grow: 4; 
+  flex-grow: 4;
+  /* flex-shrink: 4; */
+  /* flex-basis: 360px; */
+  margin: 20px;
 }
 .col img{
-  display: block;
+  /* width: 100%; */
+  height: auto;
+  display: inline-block;
+  margin: 20px auto;
+  background-color: black;
+}
+
+.placeholder{
+  max-width: 100%;
+  display: inline-block;
   margin: 20px auto;
   background-color: black;
 }
