@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Gallery from './components/Gallery'
-// <img src="https://64.media.tumblr.com/a1652154605a76af1cf1709ce188ac51/1d1560b3b5129c23-d6/s1280x1920/90461abac1a2a010a53c939df3b449445ac695ca.png"/>
+import Stream from './components/Stream'
 
 function App() {
   const images = [
@@ -44,13 +43,13 @@ function App() {
   {
     src: 'https://64.media.tumblr.com/9ee9a84828798c8ff76b908e00cf3a7c/669d8fb2dfb649b2-bb/s1280x1920/ce6567d179b91565fcdaeb91247992a4afe7bea0.jpg',
     width: '360px',
-    heigth: '357px',
+    height: '357px',
     col: 'col-3'
   },
   {
     src: 'https://64.media.tumblr.com/602112b2886086c05a54eb070b96095d/f46bcd8a4a05bbfc-c3/s1280x1920/d0a7ea5eee9dc1acf05f5b88711752c24c28546b.jpg',
     width: '360px',
-    height: '269px',
+    height: '239px',
     col: 'col-2'
   },
   {
@@ -61,14 +60,14 @@ function App() {
   },
   {
     src: 'https://64.media.tumblr.com/35c818016dddb2664d379519add1f81a/tumblr_pul4xryLpQ1ys1z3vo1_1280.jpg',
-    width: '360px',
-    height: '224px',
+    width: '1155px',
+    height: '718px',
     col: 'col-1'
   },
   {
     src: 'https://64.media.tumblr.com/e8ab8c75332e77a97f325f4942a8cd9a/tumblr_pun8oixRic1ys1z3vo1_1280.jpg',
-    width: '360px',
-    height: '642px',
+    width: '1079px',
+    height: '1920px',
     col: 'col-2'
   },
   {
@@ -91,7 +90,7 @@ function App() {
         <li><a href="">WEB_DEV</a></li>
     </ul> 
       </aside>
-      <Gallery images={images} />
+      <Stream images={images}/>
     </div>
   );
 }

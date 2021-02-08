@@ -31,30 +31,58 @@ h1{
   padding-bottom: 20px;
 }
 .container{
-  margin-top: 50px;
-  width: 800px;
-  display: flex;
-  flex-direction: row;
-  margin-left: 270px;
   float: left;
+  width: 75%;
+  margin-left: 300px;
 }
 .col{
-  flex-grow: 4;
-  /* flex-shrink: 4; */
-  /* flex-basis: 360px; */
-  margin: 20px;
+  margin-top: 120px;
+  width: 29%;
+  float: left;
+  margin-right: 50px;
 }
-.col img{
-  /* width: 100%; */
+.col:last-of-type{
+  margin-right: 0px;
+}
+.img-container-wrapper{
+    width: 100%;
+    position: relative;
+    background: #fff;
+    margin-bottom: 80px;
+}
+.stream-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: auto;
-  display: inline-block;
-  margin: 20px auto;
-  background-color: black;
 }
 
-.placeholder{
-  max-width: 100%;
-  display: inline-block;
-  margin: 20px auto;
-  background-color: black;
+.img-caption{
+  font-size: 13px;
+  left: 0px;
+  display: inline;
+  color: black;
+  position: absolute;
+  bottom: -35px;
+}
+
+@keyframes fadeInImg{
+  from{
+    opacity: 0
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.img-loading{
+   opacity: 0;
+}
+.img-loaded{
+   animation: fadeInImg cubic-bezier(0.23, 1, 0.32, 1) 1;
+   opacity: 0;
+   animation-fill-mode: forwards;
+   animation-duration: 0.7s;
+   animation-delay: 0.1s;
 }
