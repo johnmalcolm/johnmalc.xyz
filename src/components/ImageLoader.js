@@ -13,7 +13,10 @@ class ImageLoader extends React.Component {
   static defaultProps = {
     className: "",
     loadingClassName: "img-loading",
-    loadedClassName: "img-loaded"
+    loadedClassName: "img-loaded",
+    classNameCaption: "",
+    loadingClassNameCaption: "caption-loading",
+    loadedClassNameCaption: "caption-loaded"
   };
 
   //image onLoad handler to update state to loaded
@@ -25,17 +28,26 @@ class ImageLoader extends React.Component {
 
   render() {
   
-    let { className, loadedClassName, loadingClassName, ...props } = this.props;
+    let { className, loadedClassName, loadingClassName, classNameCaption, loadingClassNameCaption, loadedClassNameCaption, ...props } = this.props;
 
     className = `${className} ${this.state.loaded
       ? loadedClassName
       : loadingClassName}`;
 
-    return <img 
+    classNameCaption = `${classNameCaption} ${this.state.loaded
+    ? loadedClassNameCaption
+    : loadingClassNameCaption}`;
+  
+
+    return <React.Fragment>
+            <img 
              src={this.props.src} 
              onClick={this.props.onClick} 
-             className={className} 
-             onLoad={this.onLoad} />;
+             className={`stream-img ${className}`} 
+             onLoad={this.onLoad} />
+             <span className={`img-caption ${classNameCaption}`} >DIGITAL_COMMONS // workshop_01 </span>
+        </React.Fragment>
+             ;
   }
 }
 

@@ -18,8 +18,7 @@ const Stream = ({ images }) => {
           classNamePrefix="img-container"
           style={{ paddingBottom: paddingBottom }}
         >
-          <ImageLoader className="stream-img" src={image.src} alt="Lazy Load Example" />
-          <div class="img-caption">DIGITAL_COMMONS // workshop_01 </div>
+          <ImageLoader src={image.src} alt="Lazy Load Example" />
         </LazyLoad>
       );
     });
