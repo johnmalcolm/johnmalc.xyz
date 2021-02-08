@@ -28,7 +28,7 @@ class ImageLoader extends React.Component {
 
   render() {
   
-    let { className, loadedClassName, loadingClassName, classNameCaption, loadingClassNameCaption, loadedClassNameCaption, ...props } = this.props;
+    let { className, loadedClassName, loadingClassName, classNameCaption, loadingClassNameCaption, loadedClassNameCaption, caption, ...props } = this.props;
 
     className = `${className} ${this.state.loaded
       ? loadedClassName
@@ -43,11 +43,10 @@ class ImageLoader extends React.Component {
             <img 
              src={this.props.src} 
              onClick={this.props.onClick} 
-             className={`stream-img ${className}`} 
+             className={className} 
              onLoad={this.onLoad} />
-             <span className={`img-caption ${classNameCaption}`} >DIGITAL_COMMONS // workshop_01 </span>
-        </React.Fragment>
-             ;
+             <span className={classNameCaption} >{caption}</span>
+        </React.Fragment>;
   }
 }
 
