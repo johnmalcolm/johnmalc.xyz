@@ -58,6 +58,16 @@ h1{
   height: auto;
 }
 
+.stream-img-placeholder{
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
 .img-caption{
   background-color: white;
   font-size: 13px;

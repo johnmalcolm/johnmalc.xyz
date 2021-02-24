@@ -1,7 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import ImageLoader from './ImageLoader.js';
-
+import ImageLoader from "./ImageLoader.js";
 
 const Stream = ({ images }) => {
   const createGalleryColumn = (colNumber) => {
@@ -17,13 +16,14 @@ const Stream = ({ images }) => {
         <LazyLoad
           classNamePrefix="img-container"
           style={{ paddingBottom: paddingBottom }}
+          // placeholder={<h2>Hello</h2>}
+          unmountIfInvisible={false}
         >
-          <ImageLoader 
-            className="stream-img" 
-            classNameCaption="img-caption" 
-            src={image.src} 
+          <ImageLoader
+            className="stream-img"
+            classNameCaption="img-caption"
+            src={image.src}
             caption={image.caption}
-            alt="Lazy Load Example" 
           />
         </LazyLoad>
       );

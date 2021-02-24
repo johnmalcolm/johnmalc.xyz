@@ -5,21 +5,21 @@ import Stream from './components/Stream'
 function App() {
   const images = [
     {
-    src: 'https://64.media.tumblr.com/a1652154605a76af1cf1709ce188ac51/1d1560b3b5129c23-d6/s1280x1920/90461abac1a2a010a53c939df3b449445ac695ca.png',
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/LSAD.png',
     width: '360px', 
     height: '510px',
     col: 'col-1',
     caption: 'DIGITAL_COMMONS @ Limerick School of Art & Design'
   },
   {
-    src: 'https://64.media.tumblr.com/b4e2cd068b7571b5e72f68cb1a056b44/fe44d8a362ecff3b-61/s1280x1920/c430de366882ab98462332ea3910aa322223a19c.png',
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/DIGITAL_IMMIGRANT.png',
     width: '360px',
     height: '203px',
     col: 'col-1',
     caption: 'DIGITAL_COMMONS // workshop_01'
   },
   {
-    src: 'https://64.media.tumblr.com/1d01f544a82556e44a4712385bda9263/tumblr_pv47prq6zn1ys1z3vo1_1280.png',
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/JITTERS.png',
     width: '360px',
     height: '270px',
     col: 'col-1',
@@ -40,14 +40,14 @@ function App() {
     caption: 'DIGITAL_COMMONS // if commons == false{ return null; }'
   },
   {
-    src: 'https://64.media.tumblr.com/c7f9433421e1d2f7f9860c5a9bf6f3bf/0c774c7303894d41-6c/s640x960/37bcb8ab804f011843f4491ffa44e55d366b52f1.gifv',
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/DIGITAL_COMMONS-RAW.gif',
     width: '360px',
     height: '211px',
     col: 'col-2',
     caption: 'DIGITAL_COMMONS // if i belong to everyone, i am not an evil'
   },
   {
-    src: 'https://64.media.tumblr.com/9ee9a84828798c8ff76b908e00cf3a7c/669d8fb2dfb649b2-bb/s1280x1920/ce6567d179b91565fcdaeb91247992a4afe7bea0.jpg',
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/DP_THESAURUS.png',
     width: '360px',
     height: '357px',
     col: 'col-3',
