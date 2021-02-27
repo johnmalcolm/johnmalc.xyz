@@ -35,13 +35,13 @@ h1{
   width: 75%;
   margin-left: 280px;
 }
-.col{
+.feed{
   margin-top: 120px;
   width: 29%;
   float: left;
   margin-right: 50px;
 }
-.col:last-of-type{
+.feed:last-of-type{
   margin-right: 0px;
 }
 .img-container-wrapper{
@@ -121,4 +121,10 @@ h1{
    animation-fill-mode: both;
    animation-duration: 0.7s;
    animation-delay: 0.1s;
+}
+
+@media screen and (max-width: 1230px){
+  .img-container-wrapper{
+    padding-bottom: 0px !important;
+  }
 }

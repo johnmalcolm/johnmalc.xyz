@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import LazyLoad from "react-lazyload";
 import ImageLoader from "./ImageLoader.js";
 
 const Stream = ({ images }) => {
+  const [windowWidth, setWidth] = useState(window.innerWidth);
+  useEffect(()=>{
+    window.addEventListener("resize", () => {
+      setWidth(window.innerWidth)
+    })
+  },[])
   const createGalleryColumn = (colNumber) => {
     const imageCol = images.filter((image) => {
       return image.col === `col-${colNumber}`;
@@ -29,12 +35,12 @@ const Stream = ({ images }) => {
       );
     });
   };
-
+  {console.log(windowWidth)}
   return (
     <div className="container">
-      <div className="col">{createGalleryColumn(1)}</div>
-      <div className="col">{createGalleryColumn(2)}</div>
-      <div className="col">{createGalleryColumn(3)}</div>
+      <div className="feed">{createGalleryColumn(1)}</div>
+      <div className="feed">{createGalleryColumn(2)}</div>
+      <div className="feed">{createGalleryColumn(3)}</div>
     </div>
   );
 };
