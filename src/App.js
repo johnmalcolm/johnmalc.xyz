@@ -5,7 +5,7 @@ import Stream from './components/Stream'
 function App() {
   const images = [
     {
-    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/LSAD.png',
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/LSAD.jpg',
     width: '360px', 
     height: '510px',
     col: 'col-1',
