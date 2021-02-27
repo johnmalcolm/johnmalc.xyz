@@ -38,9 +38,9 @@ const Stream = ({ images }) => {
   {console.log(windowWidth)}
   return (
     <div className="container">
-      <div className="feed">{createGalleryColumn(1)}</div>
-      <div className="feed">{createGalleryColumn(2)}</div>
-      <div className="feed">{createGalleryColumn(3)}</div>
+      <div className="feed feed1">{createGalleryColumn(1)}</div>
+      <div className="feed feed2">{createGalleryColumn(2)}</div>
+      <div className="feed feed3">{createGalleryColumn(3)}</div>
     </div>
   );
 };
