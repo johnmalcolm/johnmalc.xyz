@@ -93,14 +93,14 @@ function App() {
     width: '1000px',
     height: '593px',
     caption: 'WIDE_SHUT // looking further _02',
-    col: 'col-1'
+    col: 'col-3'
   },
   {
     src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/EFIL_01.1.jpg',
     width: '423px',
     height: '462px',
     caption: 'EFIL_01 // 😵',
-    col: 'col-3'
+    col: 'col-1'
   },
   {
     src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/DIGITAL_FRAGMENTS_01.jpg',
@@ -114,7 +114,98 @@ function App() {
     width: '1280px',
     height: '1707px',
     caption: 'EFIL_03 // ⚡️',
+    col: 'col-2'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/WIDE_SHUT_01.jpg',
+    width: '1000px',
+    height: '593px',
+    caption: 'WIDE_SHUT // looking further _01',
+    col: 'col-3'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/ALLEY.jpg',
+    width: '1181px',
+    height: '1181px',
+    caption: 'CSR // Office Communities & Resources',
     col: 'col-1'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/WIDE_SHUT_03.jpg',
+    width: '1000px',
+    height: '593px',
+    caption: 'WIDE_SHUT // looking further _01',
+    col: 'col-1'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/EFIL_00.jpg',
+    width: '1280px',
+    height: '837px',
+    caption: 'EFIL_00 // 🔊',
+    col: 'col-3'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/TUR_BANISM_04.jpg',
+    width: '1155px',
+    height: '718px',
+    caption: 'TUR_BANISM // reconstructing_04',
+    col: 'col-3'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/TUR_BANISM_02.jpg',
+    width: '1155px',
+    height: '718px',
+    caption: 'TUR_BANISM // reconstructing_02',
+    col: 'col-2'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/TUR_BANISM_01.jpg',
+    width: '1155px',
+    height: '718px',
+    caption: 'TUR_BANISM // reconstructing_01',
+    col: 'col-1'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/DIGITAL_FRAGEMENTS_00.jpg',
+    width: '1080px',
+    height: '1080px',
+    caption: 'DIGITAL_FRAGEMENTS // 00',
+    col: 'col-3'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/QUEER_DIASPORA.png',
+    width: '945px',
+    height: '434px',
+    caption: 'QUEER_DIASPORA // LGBTI +Asylum Seekers in Ireland',
+    col: 'col-2'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/REFLECTIONS_01.jpg',
+    width: '640px',
+    height: '640px',
+    caption: 'REFLECTIONS_01',
+    col: 'col-1'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/JMD.png',
+    width: '1280px',
+    height: '839px',
+    caption: 'JOHN_MALCOLM_DESIGN // Freelance Designer & Front End Developer',
+    col: 'col-1'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/REFLECTIONS_02.jpg',
+    width: '640px',
+    height: '640px',
+    caption: 'REFLECTIONS_02',
+    col: 'col-2'
+  },
+  {
+    src: 'https://s3-eu-west-1.amazonaws.com/johnmalc.xyz/stream/REFLECTIONS_03.jpg',
+    width: '640px',
+    height: '640px',
+    caption: 'REFLECTIONS_03',
+    col: 'col-3'
   }
   ]
   return (
